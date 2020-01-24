@@ -22,11 +22,11 @@ let faveColors = ['red', 'green', 'black']
 // The profileImage key value should be a method that returns this url `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`.
 
 let me = {
-    firstname: 'Xander',
-    superHeroName: 'Super Xander',
+    firstName: 'Xander',
+    superHeroName: 'Super Weird',
     homeTown: 'Salt Lake',
     superPowers: ['Super Punch', 'Super Kick', 'Super Dumb'],
-    superPowersXP: function(){
+    superPowerXP: function(){
         return (Math.floor(Math.random() * 100) + 1)
     },
     profileImage: function() {
@@ -65,7 +65,7 @@ function setColor(arr) {
 
 function setPowers(arr) {
     for(let i = 0; i < arr.length; i++) {
-        createLi(...arr)
+        createLi(arr[i])
     }
 }
 
