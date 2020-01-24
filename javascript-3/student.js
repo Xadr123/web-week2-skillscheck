@@ -22,7 +22,7 @@ function setGroceryListTitle(x) {
 //Create a function called 'addItem' that takes in one parameter called 'item'. Add the item parameter to the end of the groceries array created above. Inside of addItem, invoke displayData() which is a function you did not create (we did) that takes care of some of the work for getting your page to display correctly.
 
 function addItem(item) {
-    groceries.push(`${item}`)
+    groceries.push(item)
     displayData()
 }
 
@@ -40,7 +40,7 @@ function removeItem(index) {
 function checkGroceryCount() {
     if(groceries.length >= 5) {
         return 'That looks like a big trip'
-    } else if(groceries.length = 1) {
+    } else if(groceries.length === 1) {
         return '1 item'
     } else if(1 > groceries.length < 5) {
         return `${groceries.length} items`
